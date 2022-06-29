@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block titulo %} Editar {% endblock %}
+
+{% block contenido %}
+    
+<div class="card">
+    <div class="card-header">
+        Edicion del Equipo
+    </div>
+    <div class="card-body">
+        {% include 'equipos/form.html' %}
+    </div>
+</div>
+
+{% endblock  %}
+        

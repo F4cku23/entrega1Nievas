@@ -1,0 +1,16 @@
+<h2>Inscripcion Equipo</h1>
+<form enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+    {% for campo in formulario %}
+        {% if campo.field.widget.input_type == 'file' and campo.value %}
+            <img src="{{ MEDIA_URL }}/imagenes/{{campo.value}}" width="20%" alt="imgEquipo"/><br>
+        {% endif %}
+        <input class="form-control" type="{{ campo.field.widget.input_type }}" placeholder="{{ campo.label }}" name="{{ campo.name }}" value="{{ campo.value | default:''}}">
+        <br>
+        <div class="col-10 help-text"> {{campo.errors}} </div>
+    {% endfor %}
+    
+    <input name="" class="btn btn-success" type="submit" value="Registrar">
+    <a href=" {% url 'equipos' %}" class="btn btn-danger" type="button">Cancelar</a>
+</form>
+

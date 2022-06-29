@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block titulo %} Equipos {% endblock %}
+
+{% block contenido %}
+    <br>
+    <div class="card">
+        <div class="card-header">
+            Equipos Inscriptos
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Imagen EQ</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Region</th>
+                    <th scope="col">Win</th>
+                    <th scope="col">Lose</th>
+                    <th scope="col">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for equipo in equipos %}
+                  <tr>
+                    <td>
+                      <img src="{{ equipo.imagen.url }}" width="20%" alt="logo_invitacional-2022"/>
+                    </td>
+                    <td>{{ equipo.nombre }}</td>
+                    <td>{{ equipo.region }}</td>
+                    <td>{{ equipo.partidas_ganadas }}</td>
+                    <td>{{ equipo.partidas_perdidas }}</td>
+                    <td> <a class="btn btn-warning" role="button" href="{% url 'editar' equipo.id %}">Editar</a>  <a class="btn btn-danger" role="button" href="{% url 'eliminar' equipo.id %}">Eliminar</a></td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+{% endblock  %}
+        
