@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-06-2022 a las 04:13:00
+-- Tiempo de generación: 01-07-2022 a las 01:14:22
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -43,8 +43,35 @@ CREATE TABLE `aplicaciones_equipo` (
 INSERT INTO `aplicaciones_equipo` (`id`, `nombre`, `region`, `partidas_ganadas`, `partidas_perdidas`, `imagen`) VALUES
 (2, 'TEAM VISION', 'EUW', 5, 4, 'imagenes/eq3.png'),
 (3, 'Destierro TEAM', 'LAN', 3, 4, 'imagenes/eq2.png'),
-(4, 'S4vitar', 'LAS', 5, 3, 'imagenes/eq1.png'),
-(5, 'Relojeros', 'LAN', 3, 2, 'imagenes/zilean_JO4rWkh.jpg');
+(5, 'Relojeros', 'LAN', 3, 2, 'imagenes/zilean_JO4rWkh.jpg'),
+(9, 'FunPlus Phoenix', 'LPL', 8, 3, 'imagenes/fpx.jpg'),
+(10, 'EDward Gaming', 'LPL', 6, 4, 'imagenes/EDG.jpg'),
+(11, 'Royal Never Give Up', 'LPL', 7, 3, 'imagenes/RNG.jpg'),
+(12, 'LNG Esports', 'LPL', 3, 5, 'imagenes/LNG.jpg'),
+(13, 'DWG KIA', 'LCK', 6, 1, 'imagenes/DWG.jpg'),
+(14, 'Gen.G', 'LCK', 5, 4, 'imagenes/GG.jpg'),
+(15, 'T1', 'LCK', 7, 3, 'imagenes/T1.jpg'),
+(16, 'Hanwha Life Esports', 'LCK', 4, 4, 'imagenes/HLE.jpg'),
+(17, 'MAD Lions', 'LEC', 6, 5, 'imagenes/MAD.jpg'),
+(18, 'Fnatic', 'LEC', 4, 7, 'imagenes/FNC.jpg'),
+(19, 'Rogue', 'LEC', 3, 6, 'imagenes/RG.jpg'),
+(20, '100 Thieves', 'LCS', 3, 6, 'imagenes/100T.jpg'),
+(21, 'Team Liquid', 'LCS', 2, 6, 'imagenes/TL.jpg'),
+(22, 'Cloud9', 'LCS', 3, 5, 'imagenes/C9.jpg'),
+(23, 'PSG Talon', 'PCS', 4, 4, 'imagenes/PSG.jpg'),
+(24, 'Beyond Gaming', 'PCS', 3, 5, 'imagenes/BG.jpg'),
+(25, 'Unicorns of Love', 'LCL', 2, 6, 'imagenes/UL.jpg'),
+(26, 'Infinity Esports', 'LLA', 1, 5, 'imagenes/IE.jpg'),
+(27, 'Galatasaray Esports', 'TCL', 2, 6, 'imagenes/GE.jpg'),
+(28, 'RED Canids', 'CBLOL', 1, 4, 'imagenes/RED.jpg'),
+(29, 'DetonatioN FocusMe', 'LJL', 2, 6, 'imagenes/DNG.jpg'),
+(30, 'Peace', 'LCO', 1, 6, 'imagenes/PC.jpg'),
+(31, 'Team SoloMid', 'NA', 3, 6, 'imagenes/TSM.jpg'),
+(32, 'Isurus', 'LAS', 5, 5, 'imagenes/IS.jpg'),
+(33, 'Stone Movistar', 'LAS', 3, 5, 'imagenes/SM.jpg'),
+(34, 'River Plate Gaming', 'LAS', 5, 5, 'imagenes/RPG.jpg'),
+(35, 'Misfits Premier', 'EUW', 3, 4, 'imagenes/MP.jpg'),
+(36, 'Dignitas Academy', 'LAN', 5, 4, 'imagenes/DG.jpg');
 
 -- --------------------------------------------------------
 
@@ -431,7 +458,7 @@ ALTER TABLE `django_session`
 -- AUTO_INCREMENT de la tabla `aplicaciones_equipo`
 --
 ALTER TABLE `aplicaciones_equipo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT de la tabla `aplicaciones_integrantes`
