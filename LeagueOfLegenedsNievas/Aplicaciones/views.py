@@ -35,10 +35,13 @@ def eliminar(request, id):
     return redirect('equipos')
 
 def search(request):
-    if request.GET['nombre']:
-        nombre=request.GET['nombre']
-        equipos=Equipo.objects.filter(nombre__icontains=nombre)
+   
+    if request.GET["equipo"]:
+          nombre = request.GET['equipo']
+          equipos=Equipo.objects.filter(nombre__icontains=nombre)
+          return render(request, './equipos/index.html', {'equipos': equipos})
+          #return HttpResponse(equipos)
     else:
         respuesta="no hay datos"
-        return HttpResponse(respuesta)    
-    return render(request, './equipos/index.html', {'nombre': equipos})
+        return HttpResponse(respuesta) 
+    
