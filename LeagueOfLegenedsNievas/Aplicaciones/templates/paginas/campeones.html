@@ -29,7 +29,7 @@
         const z=nombreDeCampeones.map((x)=>{
             if(campeones[x]){
 
-                return {'name':campeones[x].name,'title':campeones[x].title,'blurb':campeones[x].blurb}
+                return {'name':campeones[x].name,'title':campeones[x].title,'blurb':campeones[x].blurb, 'id':campeones[x].id}
             }else{
                 return ''
             }
@@ -41,25 +41,26 @@
                 //return `<h1>${dato}</h1>`
             }
         })
-        console.log("esto es t")
-        console.log(t)
+        //console.log("esto es t")
+        //console.log(t)
         const campeonesDom=document.getElementById('champ')
-
         const cheto= t.map((domEl) => {
+        const img=domEl.id
+        console.log(img)
         const pag=domEl.name.toLowerCase()
             return `
-                <tr>
-                    <td><img src="./lol/aatrox.jpg" alt="imgChamp"/></td>
-                    <td><h4>${domEl.name}</h4></td>
-                    <td>${domEl.title}</td>
-                    <td>${domEl.blurb} <a href="https://www.leagueoflegends.com/en-us/champions/${pag}" target="_blank">More</a></td>
+                <tr class="row">
+                    <td class="col-2"><img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${img}_0.jpg" alt="imgChamp" width="100%"/></td>
+                    <td class="col-2"><h4>${domEl.name}</h4></td>
+                    <td class="col-2">${domEl.title}</td>
+                    <td class="col-6">${domEl.blurb} <a href="https://www.leagueoflegends.com/en-us/champions/${pag}" target="_blank">More</a></td>
                 </tr>   
                 `})
         campeonesDom.innerHTML=cheto.join('')
         console.log(campeonesDom)
         
     })
-    
+    '${pag}.jpg'
 </script>
 
 {% endblock  %}
