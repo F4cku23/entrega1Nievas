@@ -1,4 +1,9 @@
-# Entregable intermedio coderHouse
+# Trabajo Final coderHouse
+
+#Integrantes :
+- Paulo Nievas
+- Ángeles Figueroa Rodríguez
+
 
 Proyecto pensado para poder hacer inscripcion de equipos para torneo de League of Legends
 
