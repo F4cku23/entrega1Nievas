@@ -14,24 +14,23 @@
         <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
           <div class="container-fluid">
             <div class="nav navbar-nav">
-              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fleagueoflegends%2Fimages%2F5%2F53%2FRiot_Games_logo_icon.png%2Frevision%2Flatest%3Fcb%3D20190417213704&f=1&nofb=1" width="7%" alt="logo">
+              <img src="./static/img/logo.png" width="7%" alt="logo">
                 <a class="nav-item nav-link" href=" {% url 'inicio' %} ">Home</a>
                 <a class="nav-item nav-link" href=" {% url 'equipos' %} ">Equipos</a>
                 <a class="nav-item nav-link" href=" {% url 'inscripcion' %} ">Inscripciones</a>
                 <a class="nav-item nav-link" href=" {% url 'campeones' %} ">Campeones</a>
                 <a class="nav-item nav-link" href="#">Partidas</a>
-                <a class="nav-item nav-link"  data-bs-toggle="modal" data-bs-target="#login" href="#">Login</a>
+                <a class="nav-item nav-link"  data-bs-toggle="modal" data-bs-target="#login" href="#login">Login</a>
 
               <!-- Modal -->
-                  <div class="modal" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
+                  <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content mod">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                          <h5 class="modal-title" id="exampleModalToggleLabel">Login</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          
                           <form class="px-4 py-3">
                             <div class="mb-3">
                               
@@ -44,21 +43,55 @@
                             <div class="mb-3">
                               
                             </div>
-                            <a class="btn btn-outline-success" role="button" href="#">Ingresar</a> 
-                            <a class="btn btn-outline-secondary" role="button" href="#">Registrar</a>
+                            
                           </form>
-
                         </div>
-                        
+                        <div class="modal-footer">
+                          <a class="btn btn-outline-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Login</a>
+                          <a class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Resgistrar</a>
+                        </div>
                       </div>
                     </div>
                   </div>
-              <!-- fin Modal -->
+                  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content mod">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalToggleLabel2">Registro</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form class="px-4 py-3">
+                            <div class="mb-3">
+                              
+                              <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="Nombre invocador">
+                            </div>
+                            <div class="mb-3">
+                              
+                              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                              
+                            </div>
+                            
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <a class="btn btn-outline-success" data-bs-toggle="modal">Registrar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  
+                <!-- fin Modal -->
             </div>
             <form class="d-flex" role="search" action="{% url 'search' %}" methos="GET">
               <input class="form-control me-2" type="search" placeholder="Buscar" id="equipo" name="equipo">
               <button class="btn btn-outline-secondary" type="submit">Search</button>
             </form>
+            <p id="uss">Bienvenido {Usuario}</p>
           </div>
         </nav>
 

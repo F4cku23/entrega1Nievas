@@ -5,3 +5,12 @@ body{
 .modal-backdrop{
     position: unset !important;
 }
+#uss{
+    color: #a5a2a2;
+}
+.mod{
+    background-color: #a5a2a2;
+}
+.inscripcion{
+    margin: 3em;
+}

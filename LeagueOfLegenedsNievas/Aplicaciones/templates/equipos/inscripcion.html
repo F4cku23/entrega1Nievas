@@ -4,11 +4,18 @@
 
 {% block contenido %}
 <br>
-<div class="card">
-    <div class="card-body">
-        {% include 'equipos/form.html' %}
+<div class="row">
+    <div class="card col-5 inscripcion">
+        <div class="card-body">
+            {% include 'equipos/form.html' %}
+        </div>
+    </div>
+
+    <div class="card col-5 inscripcion">
+        <div class="card-body">
+            {% include 'equipos/form.html' %}
+        </div>
     </div>
 </div>
-
 {% endblock  %}
         
