@@ -41,3 +41,4 @@ class Partidas(models.Model):
     
     def __str__(self):
         fila="Nombre: " + self.equipo1 + " - " + "Nombre: " + self.equipo2
+
