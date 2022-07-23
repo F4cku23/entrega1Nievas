@@ -19,7 +19,7 @@
                 <a class="nav-item nav-link" href=" {% url 'equipos' %} ">Equipos</a>
                 <a class="nav-item nav-link" href=" {% url 'inscripcion' %} ">Inscripciones</a>
                 <a class="nav-item nav-link" href=" {% url 'campeones' %} ">Campeones</a>
-                <a class="nav-item nav-link" href="{% url 'news' %}">News</a>
+                <a class="nav-item nav-link" href="#">Partidas</a>
                 <a class="nav-item nav-link"  data-bs-toggle="modal" data-bs-target="#login" href="#login">Login</a>
 
               <!-- Modal -->
@@ -48,7 +48,7 @@
                         </div>
                         <div class="modal-footer">
                           <a class="btn btn-outline-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Login</a>
-                          <a class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Solicitar resgistro</a>
+                          <a class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Resgistrar</a>
                         </div>
                       </div>
                     </div>
@@ -61,12 +61,23 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          <p class="text-center">Para solicitar un registro ponerse en contacto con los administradores al siguiente mail:</p>
-                          <p class="text-center fw-bolder">admin@riotgames.com</p>
+                          <form class="px-4 py-3">
+                            <div class="mb-3">
+                              
+                              <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="Nombre invocador">
+                            </div>
+                            <div class="mb-3">
+                              
+                              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                              
+                            </div>
+                            
+                          </form>
                         </div>
                         <div class="modal-footer">
-                          
-                          <a class="btn btn-outline-secondary" data-bs-toggle="modal">Cerrar</a>
+                          <a class="btn btn-outline-success" data-bs-toggle="modal">Registrar</a>
                         </div>
                       </div>
                     </div>
@@ -84,7 +95,7 @@
           </div>
         </nav>
 
-        <div class="container">
+        <div class="container fondo">
             <div class="row">
                 <div class="col-12">
                     {% block contenido %}
@@ -98,5 +109,17 @@
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
+        <script src="https://kit.fontawesome.com/6d5b662496.js" crossorigin="anonymous"></script>
+      
+      <footer>
+        <div class="about_us">
+          <div class="box">
+            <a class="nav-item nav-link" href=" {% url 'about' %} ">Sobre nosotros</a>
+          </div>
+          <div class="box">
+            <small>© Copyright 2022 - <b>Paulo Nievas, Ángeles Figueroa Rodríguez</b></small>
+          </div>
+        </div>
+      </footer>
     </body>
 </html>
