@@ -35,10 +35,10 @@ class Integrantes(models.Model):
         super().delete()
 
     
-class Partidas(models.Model):
-    equipo1=models.CharField(max_length=20, verbose_name='Nombre')
-    equipo2=models.CharField(max_length=20, verbose_name='Nombre')
+class Usuarios(models.Model):
+    invocador=models.CharField(max_length=15)
+    password=models.CharField(max_length=15)
     
     def __str__(self):
-        fila="Nombre: " + self.equipo1 + " - " + "Nombre: " + self.equipo2
+        fila="Nombre: " + self.invocador
 
