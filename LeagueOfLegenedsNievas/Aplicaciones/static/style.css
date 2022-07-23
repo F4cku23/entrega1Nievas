@@ -1,17 +1,110 @@
 body{
-    background-color: #0A1428;
-    
+    background-image: url('./img/fondo_2.jpg');
+    background-color:#021527;
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .modal-backdrop{
     position: unset !important;
 }
+
 #uss{
     color: #a5a2a2;
 }
+
 .mod{
     background-color: #a5a2a2;
 }
+
 .inscripcion{
     margin: 3em;
+    background-color: #a5a2a2;
+}
+
+#titulo{
+    color:#C89B3C;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 1 px 1 px 1 px rgba(0, 0, 0, 0.342);
+    position: sticky;
+}
+
+.texto{
+    color:aliceblue;
+    font-size: 30px;
+    text-align: justify;
+    padding-right: 1em !important;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+footer{
+    width: 100%;
+    background-color: #021527;
+    color:#a5a2a2 !important;
+    
+}
+
+.about_us{
+    column-count: 2;
+    padding: 10px;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.nav-link{
+    color: aliceblue !important;
+}
+
+small{
+    font-size: 15px;
+}
+
+b{
+    font-size: 15px;
+}
+
+.nosotros{
+    column-count: 2;
+    padding: 10px;
+    text-align: center;
+    margin-top: 3em;
+    color: #a5a2a2;
+}
+
+.nosotros .box img{
+    /* height: 100px; */
+        width: 40%;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 50%;
+        background-size: 100% auto;
+}
+
+.nosotros .box p b{
+    font-size: 35px;
+}
+.nosotros .box p{
+    margin-top: 20px;
+}
+#redes{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.nosotros .box a{
+    font-size: 40px;
+}
+.nosotros{
+    margin-bottom: 60px;
+}
+a{
+    text-decoration: none;
 }
