@@ -45,3 +45,5 @@ def search(request):
         respuesta="no hay datos"
         return HttpResponse(respuesta) 
     
+def news(request):
+    return render(request, 'paginas/news.html')

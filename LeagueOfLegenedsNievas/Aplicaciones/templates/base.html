@@ -19,7 +19,7 @@
                 <a class="nav-item nav-link" href=" {% url 'equipos' %} ">Equipos</a>
                 <a class="nav-item nav-link" href=" {% url 'inscripcion' %} ">Inscripciones</a>
                 <a class="nav-item nav-link" href=" {% url 'campeones' %} ">Campeones</a>
-                <a class="nav-item nav-link" href="#">Partidas</a>
+                <a class="nav-item nav-link" href="{% url 'news' %}">News</a>
                 <a class="nav-item nav-link"  data-bs-toggle="modal" data-bs-target="#login" href="#login">Login</a>
 
               <!-- Modal -->
@@ -48,7 +48,7 @@
                         </div>
                         <div class="modal-footer">
                           <a class="btn btn-outline-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Login</a>
-                          <a class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Resgistrar</a>
+                          <a class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Solicitar resgistro</a>
                         </div>
                       </div>
                     </div>
@@ -61,23 +61,12 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          <form class="px-4 py-3">
-                            <div class="mb-3">
-                              
-                              <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="Nombre invocador">
-                            </div>
-                            <div class="mb-3">
-                              
-                              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                            </div>
-                            <div class="mb-3">
-                              
-                            </div>
-                            
-                          </form>
+                          <p class="text-center">Para solicitar un registro ponerse en contacto con los administradores al siguiente mail:</p>
+                          <p class="text-center fw-bolder">admin@riotgames.com</p>
                         </div>
                         <div class="modal-footer">
-                          <a class="btn btn-outline-success" data-bs-toggle="modal">Registrar</a>
+                          
+                          <a class="btn btn-outline-secondary" data-bs-toggle="modal">Cerrar</a>
                         </div>
                       </div>
                     </div>
