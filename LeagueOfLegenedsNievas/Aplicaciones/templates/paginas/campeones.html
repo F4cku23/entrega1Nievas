@@ -7,7 +7,7 @@
 <div class="container-fluid">
     <div class="col-12">
         
-            <h1 class="text-center">
+            <h1 class="text-center" id="titulo">
                 Campeones League of Legends
             </h1>
             <div class="card-body">
@@ -53,7 +53,7 @@
                     <td class="col-2"><img src="./static/img/${img}.jpg" alt="imgChamp" width="60%"/></td>
                     <td class="col-2"><h4>${domEl.name}</h4></td>
                     <td class="col-2">${domEl.title}</td>
-                    <td class="col-6">${domEl.blurb} <a href="https://www.leagueoflegends.com/en-us/champions/${pag}" target="_blank">More</a></td>
+                    <td class="col-6 texto">${domEl.blurb} <a href="https://www.leagueoflegends.com/en-us/champions/${pag}" target="_blank">More</a></td>
                 </tr>   
                 `})
         campeonesDom.innerHTML=cheto.join('')
