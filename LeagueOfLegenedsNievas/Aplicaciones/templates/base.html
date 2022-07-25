@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <link rel="icon" href="./static/img/logo.png">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title> {% block titulo %} {% endblock %}</title>
@@ -14,12 +15,12 @@
         <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
           <div class="container-fluid">
             <div class="nav navbar-nav">
-              <img src="./static/img/logo.png" width="7%" alt="logo">
+              
                 <a class="nav-item nav-link" href=" {% url 'inicio' %} ">Home</a>
                 <a class="nav-item nav-link" href=" {% url 'equipos' %} ">Equipos</a>
                 <a class="nav-item nav-link" href=" {% url 'inscripcion' %} ">Inscripciones</a>
                 <a class="nav-item nav-link" href=" {% url 'campeones' %} ">Campeones</a>
-                <a class="nav-item nav-link" href="#">Partidas</a>
+                <a class="nav-item nav-link" href=" {% url 'news' %} ">News</a>
                 <a class="nav-item nav-link"  data-bs-toggle="modal" data-bs-target="#login" href="#login">Login</a>
 
               <!-- Modal -->
@@ -62,22 +63,14 @@
                         </div>
                         <div class="modal-body">
                           <form class="px-4 py-3">
-                            <div class="mb-3">
-                              
-                              <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="Nombre invocador">
-                            </div>
-                            <div class="mb-3">
-                              
-                              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                            </div>
-                            <div class="mb-3">
-                              
-                            </div>
+                            
+                            <p class="text-center">Para registrarse debe ponerse en contacto con los administradores enviando un mail a:</p>
+                            <p class="text-center fw-bold">admin@riotgames.com</p>
                             
                           </form>
                         </div>
                         <div class="modal-footer">
-                          <a class="btn btn-outline-success" data-bs-toggle="modal">Registrar</a>
+                          
                         </div>
                       </div>
                     </div>
@@ -113,9 +106,9 @@
       
       <footer>
         <div class="about_us">
-          <div class="box">
+          {% comment %} <div class="box">
             <a class="nav-item nav-link" href=" {% url 'about' %} ">Sobre nosotros</a>
-          </div>
+          </div> {% endcomment %}
           <div class="box">
             <small>© Copyright 2022 - <b>Paulo Nievas, Ángeles Figueroa Rodríguez</b></small>
           </div>
