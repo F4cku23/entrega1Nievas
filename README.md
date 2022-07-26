@@ -4,13 +4,14 @@
 - Paulo Facundo Gastón Nievas
 - Ángeles Figueroa Rodríguez
 
-Proyecto pensado para poder hacer inscripción de equipos para torneo de League of Legends
+Proyecto pensado para poder hacer inscripción de equipos para torneo de League of Legends.
 
 - Home: con imagen principal y un botón para acceder a ver las partidas de las ligas.
 - Equipos: listado de los equipos inscriptos.
 - Inscripciones: contiene el formulario para la inscripción del equipo con sus campos respetivos.
 - Campeones: un listado de todos los campeones actuales de League of Legends con una breve descripción y con un enlace a la página principal para ampliar información.
 - News: estilo blog, muestra las partidas ya jugadas de la liga, con el enlace para cada una de ellas.
+- Login: Solo se podrán logear los coach de cada equipo, y ellos podrán hacer las modificaciones en su equipo, para ello se necesita que un administrador los agregué como usuarios.
 - Footer: está el about que lleva a la página con los datos de ambos integrantes.
 
 /************************************************************************************************/
