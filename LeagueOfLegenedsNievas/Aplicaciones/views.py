@@ -47,3 +47,6 @@ def search(request):
     
 def news(request):
     return render(request, 'paginas/news.html')
+
+def about(request):
+    return render(request, 'paginas/about.html')
