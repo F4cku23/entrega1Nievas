@@ -21,3 +21,5 @@ En la sección de inscripciones se agregan los datos a SQLite y a la base de dat
 Para que se conecten se requiere configuración en archivo LeagueOfLegenedsNievas/settings.py 
 
 /************************************************************************************************/
+
+Enlace al video que se encuentra en drive: https://drive.google.com/file/d/1sf1nwaE_LAnV0xJ0RV2uMJBZQkVPeUzc/view?usp=sharing
