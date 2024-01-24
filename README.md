@@ -15,6 +15,7 @@ Proyecto pensado para poder hacer inscripción de equipos para torneo de League 
 - Footer: está el about que lleva a la página con los datos de ambos integrantes.
 
 /************************************************************************************************/
+
 Para poder levantar el proyecto con el servidor es necesario la instalación de XAMPP, para el manejo de imágenes y la base de datos de phpMyAdmin se requiere la instalación de "PyMySQL" y "pillow".
 
 En la sección de inscripciones se agregan los datos a SQLite y a la base de datos de PhpMyAdmin, con todos los datos y las imágenes que se carguen. Dicha base de datos es torneo_league_of_legends.sql que debe ser el mismo nombre de la base de datos para poder hacer la importación.
