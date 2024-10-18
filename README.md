@@ -1,5 +1,8 @@
 # Trabajo Final coderHouse
 
+![home_proyectoFinal](https://github.com/user-attachments/assets/92df1dcf-0cbe-456a-91fd-4ad013ad19fc)
+
+
 #Integrantes:
 - Paulo Facundo Gastón Nievas
 - Ángeles Figueroa Rodríguez
@@ -13,6 +16,11 @@ Proyecto pensado para poder hacer inscripción de equipos para torneo de League 
 - News: estilo blog, muestra las partidas ya jugadas de la liga, con el enlace para cada una de ellas.
 - Login: Solo se podrán logear los coach de cada equipo, y ellos podrán hacer las modificaciones en su equipo, para ello se necesita que un administrador los agregué como usuarios.
 - Footer: está el about que lleva a la página con los datos de ambos integrantes.
+
+![3](https://github.com/user-attachments/assets/e006f85e-9718-4e05-9fb3-a606e8aa9fdb)
+
+![2](https://github.com/user-attachments/assets/f5aeea49-c13f-4a5c-b720-6a26f3bff697)
+
 
 /************************************************************************************************/
 
